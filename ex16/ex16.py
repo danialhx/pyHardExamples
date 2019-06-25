@@ -12,22 +12,22 @@ print "Opening the file..."
 target = open(filename,'w')                             #opens test.txt
 
 print "Truncating the file. Goodbye!"
-target.truncate()
+target.truncate()                                       #reduces the size of the file, but ()empty erases the test.txt to empty
 
 print "Now I'm going to ask you for three lines."
 
-line1 = raw_input("line 1: ")                           
-line2 = raw_input("line 2: ")
-line3 = raw_input("line 3: ")
+line1 = raw_input("line 1: ")                           #creates variable line1 with raw input from terminal
+line2 = raw_input("line 2: ")                           #var line2
+line3 = raw_input("line 3: ")                           #var line3
 
 print "I'm going to write these to the file."
 
-target.write(line1)
-target.write("\n")
-target.write(line2)
-target.write("\n")
-target.write(line3)
-target.write("\n")
+target.write(line1)                                    #will take variable = line1 target.write(var), starts from line 1
+target.write("\n")                                     #jumps to next line
+target.write(line2)                          #writes var line2 to the line(now line 2)                                                         
+target.write("\n")                           #jumps to next line
+target.write(line3)                          #writes var line3 to current line(now line 3
+target.write("\n")                             
 
 print "And finally, we close it."
-target.close()
+target.close()                                  #closes test.txt
